@@ -7,7 +7,7 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch.",
-    "image": "https://i.postimg.cc/8P0K6YQW/course-1.png",
+    "image": "/images/Biplob1.png",
     "category": "Development"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.7,
     "level": "Intermediate",
     "description": "Master modern UI/UX design principles and tools.",
-    "image": "https://i.postimg.cc/fL8gY6rN/course-2.png",
+    "image": "/images/Biplob2.png",
     "category": "Design"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.6,
     "level": "Beginner",
     "description": "Learn SEO, social media, and online marketing strategies.",
-    "image": "https://i.postimg.cc/B6Qf5b4v/course-3.png",
+    "image": "/images/Biplob3.png",
     "category": "Marketing"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.9,
     "level": "Beginner",
     "description": "Build a strong foundation in JavaScript programming.",
-    "image": "https://i.postimg.cc/7L0T6b8j/course-4.png",
+    "image": "/images/Biplob4.png",
     "category": "Development"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.8,
     "level": "Intermediate",
     "description": "Learn React and build modern interactive web apps.",
-    "image": "https://i.postimg.cc/1tZ1wq8Q/course-5.png",
+    "image": "/images/Biplob5.png",
     "category": "Development"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.5,
     "level": "Beginner",
     "description": "Explore the basics of graphic design and visual communication.",
-    "image": "https://i.postimg.cc/vZ4f4R3M/course-6.png",
+    "image": "/images/Biplob6.png",
     "category": "Design"
   },
   {
@@ -73,7 +73,7 @@
     "rating": 4.7,
     "level": "Beginner",
     "description": "Start coding with Python and learn core programming concepts.",
-    "image": "https://i.postimg.cc/4x6rN8vY/course-7.png",
+    "image": "/images/Biplob7.png",
     "category": "Development"
   },
   {
@@ -84,7 +84,7 @@
     "rating": 4.4,
     "level": "Intermediate",
     "description": "Analyze business data effectively using Excel tools.",
-    "image": "https://i.postimg.cc/9f8M2W5H/course-8.png",
+    "image": "/images/Biplob8.png",
     "category": "Business"
   },
   {
@@ -95,7 +95,7 @@
     "rating": 4.3,
     "level": "Beginner",
     "description": "Learn the basics of content writing and copywriting.",
-    "image": "https://i.postimg.cc/x1r8dV7R/course-9.png",
+    "image": "/images/Biplob9.png",
     "category": "Writing"
   },
   {
@@ -106,7 +106,7 @@
     "rating": 4.8,
     "level": "Advanced",
     "description": "Create professional motion graphics and animations.",
-    "image": "https://i.postimg.cc/8zH6n2yM/course-10.png",
+    "image": "/images/Biplob10.png",
     "category": "Design"
   }
 ]
