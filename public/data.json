@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "https://i.postimg.cc/8P0K6YQW/course-1.png",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design Masterclass",
+    "instructor": "Sarah Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Intermediate",
+    "description": "Master modern UI/UX design principles and tools.",
+    "image": "https://i.postimg.cc/fL8gY6rN/course-2.png",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing Essentials",
+    "instructor": "Michael Brown",
+    "duration": "12 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn SEO, social media, and online marketing strategies.",
+    "image": "https://i.postimg.cc/B6Qf5b4v/course-3.png",
+    "category": "Marketing"
+  },
+  {
+    "id": 4,
+    "title": "JavaScript for Beginners",
+    "instructor": "Emily Johnson",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Beginner",
+    "description": "Build a strong foundation in JavaScript programming.",
+    "image": "https://i.postimg.cc/7L0T6b8j/course-4.png",
+    "category": "Development"
+  },
+  {
+    "id": 5,
+    "title": "React Frontend Development",
+    "instructor": "David Wilson",
+    "duration": "22 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Learn React and build modern interactive web apps.",
+    "image": "https://i.postimg.cc/1tZ1wq8Q/course-5.png",
+    "category": "Development"
+  },
+  {
+    "id": 6,
+    "title": "Graphic Design Fundamentals",
+    "instructor": "Sophia Lee",
+    "duration": "14 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Explore the basics of graphic design and visual communication.",
+    "image": "https://i.postimg.cc/vZ4f4R3M/course-6.png",
+    "category": "Design"
+  },
+  {
+    "id": 7,
+    "title": "Python Programming Basics",
+    "instructor": "Daniel Carter",
+    "duration": "16 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "Start coding with Python and learn core programming concepts.",
+    "image": "https://i.postimg.cc/4x6rN8vY/course-7.png",
+    "category": "Development"
+  },
+  {
+    "id": 8,
+    "title": "Business Analytics with Excel",
+    "instructor": "Olivia Martin",
+    "duration": "10 hours",
+    "rating": 4.4,
+    "level": "Intermediate",
+    "description": "Analyze business data effectively using Excel tools.",
+    "image": "https://i.postimg.cc/9f8M2W5H/course-8.png",
+    "category": "Business"
+  },
+  {
+    "id": 9,
+    "title": "Content Writing for Beginners",
+    "instructor": "Emma Taylor",
+    "duration": "8 hours",
+    "rating": 4.3,
+    "level": "Beginner",
+    "description": "Learn the basics of content writing and copywriting.",
+    "image": "https://i.postimg.cc/x1r8dV7R/course-9.png",
+    "category": "Writing"
+  },
+  {
+    "id": 10,
+    "title": "Motion Graphics in After Effects",
+    "instructor": "James Anderson",
+    "duration": "17 hours",
+    "rating": 4.8,
+    "level": "Advanced",
+    "description": "Create professional motion graphics and animations.",
+    "image": "https://i.postimg.cc/8zH6n2yM/course-10.png",
+    "category": "Design"
+  }
+]
+
