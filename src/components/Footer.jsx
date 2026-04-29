@@ -11,7 +11,7 @@ const Footer = () => {
           {/* 1. Brand Section */}
           <div className="space-y-5">
             <h2 className="text-2xl font-extrabold tracking-tight text-black dark:text-white">
-              SkillSpher<span className="text-blue-600">.</span>
+              Skill<span className="text-green-600">Spher.</span>
             </h2>
             <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
               Empowering your journey with high-quality AI visuals and skill-driven solutions. Simple, fast, and built for the future.
