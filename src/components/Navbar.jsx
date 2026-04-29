@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className="border-b px-5 sticky top-0 bg-white/80 backdrop-blur-md z-50">
-      <nav className="flex justify-between items-center py-4 max-w-6xl mx-auto w-full">
+      <nav className="flex justify-between items-center py-4 max-w-7xl mx-auto w-full">
       
         {/* Logo */}
         <Link href="/" className="flex gap-3 items-center">
