@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link'; // এটি ইমপোর্ট করতে ভুলবেন না
 
 const PopularCourses = () => {
   const [courses, setCourses] = useState([]);
@@ -31,19 +32,16 @@ const PopularCourses = () => {
             >
               
               <div className="bg-green-600 h-52 flex items-center justify-center text-white text-center p-4 relative">
-                
                 <img 
                   src={course.image} 
                   alt={course.title} 
                   className="absolute inset-0 w-full h-full object-cover"
                   onError={(e) => { e.target.style.display = 'none'; }}
                 />
-                
               </div>
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
-                {/*[cite: 1] */}
                 <h3 className="text-lg font-bold text-slate-900 leading-snug mb-1">
                   {course.title}
                 </h3>
@@ -58,9 +56,12 @@ const PopularCourses = () => {
                   </div>
                   
                  
-                  <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium transition-colors text-sm">
-                    View Details
-                  </button>
+                  <Link href={`/course/${course.id}`}>
+                    <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg font-medium transition-colors text-sm">
+                      View Details
+                    </button>
+                  </Link>
+
                 </div>
               </div>
             </div>

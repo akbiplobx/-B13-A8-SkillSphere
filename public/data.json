@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Complete Web Development Bootcamp",
-    "instructor": "John Doe",
+    "instructor": "A K Biplob",
     "duration": "20 hours",
     "rating": 4.8,
     "level": "Beginner",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "title": "UI/UX Design Masterclass",
-    "instructor": "Sarah Smith",
+    "instructor": "Abdul Kuddus Biplob",
     "duration": "15 hours",
     "rating": 4.7,
     "level": "Intermediate",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "title": "Digital Marketing Essentials",
-    "instructor": "Michael Brown",
+    "instructor": "Biplob Islam",
     "duration": "12 hours",
     "rating": 4.6,
     "level": "Beginner",
