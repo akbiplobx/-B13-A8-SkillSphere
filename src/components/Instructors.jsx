@@ -6,7 +6,7 @@ const Instructors = () => {
       id: 1,
       name: "A K Biplob",
       role: "Next.js Specialist",
-      img: "https://api.dicebear.com/7.x/avataaars/svg?seed=Biplob"
+      img: "/profile.png"
     },
     {
       id: 2,

@@ -11,38 +11,36 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { useRouter } from "next/navigation";
 
 export default function SignUpPage() {
+
+    const router = useRouter()
+
   const onSubmit = async (e) => {
-  e.preventDefault();
-  
-  // আপনি এখানে যা কনসোল করেছিলেন
-  const formData = {
-    name: e.target.name.value,
-    image: e.target.image.value,
-    email: e.target.email.value,
-    password: e.target.password.value,
+    e.preventDefault();
+
+    const name = e.target.name.value;
+    const image = e.target.image.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    const {data, error} = await authClient.signUp.email({
+        name,
+        email,
+        password,
+        image,
+    })
+    
+
+    console.log({data, error})
+
+    if(!error) {
+        router.push('/')
+    }
+
   };
 
-  console.log("Form Data Before Auth:", formData);
-
-  // এবার Better Auth দিয়ে সার্ভারে পাঠানো
-  const { data, error } = await authClient.signUp.email({
-    email: formData.email,
-    password: formData.password,
-    name: formData.name,
-    image: formData.image,
-    callbackURL: "/", // সফল হলে হোম পেজে নিয়ে যাবে
-  });
-
-  if (error) {
-    console.error("Sign up error:", error);
-    alert("ভুল হয়েছে: " + error.message);
-  } else {
-    console.log("Sign up success!", data);
-    alert("রেজিস্ট্রেশন সফল হয়েছে!");
-  }
-};
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
       <h1 className="text-center text-2xl font-bold">Sign Up</h1>
@@ -114,6 +112,8 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
+
+
     </Card>
   );
 }
