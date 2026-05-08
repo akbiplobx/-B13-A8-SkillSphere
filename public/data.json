@@ -7,7 +7,7 @@
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch.",
-    "image": "/images/biplob1.png",
+    "image": "/images/biplob1.jpg",
     "category": "Development"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.7,
     "level": "Intermediate",
     "description": "Master modern UI/UX design principles and tools.",
-    "image": "/images/biplob2.png",
+    "image": "/images/biplob2.jpg",
     "category": "Design"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.6,
     "level": "Beginner",
     "description": "Learn SEO, social media, and online marketing strategies.",
-    "image": "/images/biplob3.png",
+    "image": "/images/biplob3.jpg",
     "category": "Marketing"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.9,
     "level": "Beginner",
     "description": "Build a strong foundation in JavaScript programming.",
-    "image": "/images/biplob4.png",
+    "image": "/images/biplob4.jpg",
     "category": "Development"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.8,
     "level": "Intermediate",
     "description": "Learn React and build modern interactive web apps.",
-    "image": "/images/biplob5.png",
+    "image": "/images/biplob5.jpg",
     "category": "Development"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.5,
     "level": "Beginner",
     "description": "Explore the basics of graphic design and visual communication.",
-    "image": "/images/biplob6.png",
+    "image": "/images/biplob6.jpg",
     "category": "Design"
   },
   {
@@ -73,7 +73,7 @@
     "rating": 4.7,
     "level": "Beginner",
     "description": "Start coding with Python and learn core programming concepts.",
-    "image": "/images/biplob7.png",
+    "image": "/images/biplob7.jpg",
     "category": "Development"
   },
   {
@@ -84,7 +84,7 @@
     "rating": 4.4,
     "level": "Intermediate",
     "description": "Analyze business data effectively using Excel tools.",
-    "image": "/images/biplob8.png",
+    "image": "/images/biplob8.jpg",
     "category": "Business"
   },
   {
@@ -95,7 +95,7 @@
     "rating": 4.3,
     "level": "Beginner",
     "description": "Learn the basics of content writing and copywriting.",
-    "image": "/images/biplob9.png",
+    "image": "/images/biplob9.jpg",
     "category": "Writing"
   },
   {
@@ -106,7 +106,7 @@
     "rating": 4.8,
     "level": "Advanced",
     "description": "Create professional motion graphics and animations.",
-    "image": "/images/biplob10.png",
+    "image": "/images/biplob10.jpg",
     "category": "Design"
   }
 ]
