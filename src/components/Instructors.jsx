@@ -4,21 +4,21 @@ const Instructors = () => {
   const instructors = [
     {
       id: 1,
-      name: "A K Biplob",
+      name: "Jhankar Mahbub",
       role: "Next.js Specialist",
-      img: "/profile.png"
+      img: "/ins1.jpg"
     },
     {
       id: 2,
       name: "Faisal Shohag",
       role: "UI/UX Designer",
-      img: "https://api.dicebear.com/7.x/avataaars/svg?seed=Faisal"
+      img: "/ins2.jpg"
     },
     {
       id: 3,
-      name: "Jhankar Mahbub",
+      name: "Ahsan Habib",
       role: "Senior Web Developer",
-      img: "https://api.dicebear.com/7.x/avataaars/svg?seed=Jhankar"
+      img: "/ins3.jpg"
     }
   ];
 

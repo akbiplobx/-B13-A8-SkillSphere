@@ -33,13 +33,13 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-3">
           <Link 
             href="/signin" 
-            className="px-5 py-2 text-sm font-semibold text-gray-700 hover:text-green-600 transition-all"
+            className="px-6 py-2.5 text-sm font-semibold text-white bg-green-600 rounded-full hover:bg-green-700 shadow-sm hover:shadow-md transition-all active:scale-95"
           >
             Sign In
           </Link>
           <Link 
             href="/signup" 
-            className="px-6 py-2.5 text-sm font-semibold text-white bg-green-600 rounded-full hover:bg-green-700 shadow-sm hover:shadow-md transition-all active:scale-95"
+            className="px-6 py-2.5 text-sm font-semibold text-white bg-red-600 rounded-full hover:bg-green-700 shadow-sm hover:shadow-md transition-all active:scale-95"
           >
             Sign Up
           </Link>
