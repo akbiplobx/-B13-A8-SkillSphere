@@ -1,16 +1,34 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { Spinner } from "@heroui/react"; 
 
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     fetch('/data.json')
       .then((res) => res.json())
-      .then((data) => setCourses(data))
-      .catch((err) => console.error("Error:", err));
+      .then((data) => {
+        setCourses(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+        setLoading(false);
+      });
   }, []);
+
+ 
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <Spinner label="Loading courses..." color="success" size="lg" />
+      </div>
+    );
+  }
 
   return (
     <section className="py-16 bg-slate-50 min-h-screen">

@@ -12,33 +12,31 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
-export default function SignUpPage() {
+export default function SignInPage() {
 
     const router = useRouter()
 
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    const name = e.target.name.value;
-    const image = e.target.image.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const {data, error} = await authClient.signIn.email({
-        name,
-        email,
-    })
-    
-
-    console.log({data, error})
-
-    if(!error) {
-        router.push('/')
+    const { data, error } = await authClient.signIn.email({
+      email,
+      password,
+      callbackURL: "/",
+    });
+if (error) {
+      toast.error("Wrong email or password!"); 
+    } else {
+      toast.success("Login Successful!")
+      router.push("/");
     }
-
+    console.log({ data, error });
   };
-
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
       <h1 className="text-center text-2xl font-bold">Login</h1>
