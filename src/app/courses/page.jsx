@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Spinner, Input } from "@heroui/react"; 
+import { motion } from "framer-motion"; 
 
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);
@@ -22,7 +23,6 @@ const AllCourses = () => {
       });
   }, []);
 
-  
   const filteredCourses = courses.filter((course) =>
     course.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -39,13 +39,11 @@ const AllCourses = () => {
     <section className="py-16 bg-slate-50 min-h-screen">
       <div className="container mx-auto px-4">
         
-        {/* Header Section: Title and Search Bar */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800">
             Explore All <span className="text-green-600">Courses</span>
           </h2>
 
-         
           <div className="w-full md:max-w-xs">
             <Input
               type="text"
@@ -60,16 +58,24 @@ const AllCourses = () => {
           </div>
         </div>
 
-        {/* Courses Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredCourses.length > 0 ? (
             filteredCourses.map((course) => (
-              <div key={course.id} className="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col hover:shadow-lg transition-shadow">
-                <div className="bg-green-600 h-48 relative">
+            
+              <motion.div 
+                key={course.id}
+                initial={{ opacity: 0, y: 30 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                viewport={{ once: true }} 
+                whileHover={{ y: -8 }} 
+                transition={{ duration: 0.4 }}
+                className="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 flex flex-col hover:shadow-xl transition-shadow"
+              >
+                <div className="bg-green-600 h-48 relative overflow-hidden">
                   <img 
                     src={course.image} 
                     alt={course.title} 
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     onError={(e) => { e.target.style.display = 'none'; }}
                   />
                 </div>
@@ -89,13 +95,11 @@ const AllCourses = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))
           ) : (
             <div className="col-span-full text-center py-20">
-              <p className="text-slate-400 text-xl italic">
-                No courses found matching "{searchTerm}"
-              </p>
+              <p className="text-slate-400 text-xl italic">No courses found matching "{searchTerm}"</p>
             </div>
           )}
         </div>
