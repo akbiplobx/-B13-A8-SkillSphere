@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link'; // এটি ইমপোর্ট করতে ভুলবেন না
-
+import Link from 'next/link'; 
 const PopularCourses = () => {
   const [courses, setCourses] = useState([]);
 

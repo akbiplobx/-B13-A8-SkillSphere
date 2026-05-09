@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Instructors = () => {
   const instructors = [
@@ -37,11 +38,14 @@ const Instructors = () => {
             <div key={inst.id} className="relative group">
               <div className="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
                 <div className="relative mb-6 inline-block">
-                  <div className="w-32 h-32 rounded-full bg-green-50 overflow-hidden ring-4 ring-white shadow-lg group-hover:scale-105 transition-transform duration-300">
-                    <img 
+                  <div className="w-32 h-32 rounded-full bg-green-50 overflow-hidden ring-4 ring-white shadow-lg group-hover:scale-105 transition-transform duration-300 relative">
+                   
+                    <Image 
                       src={inst.img} 
                       alt={inst.name} 
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
                   </div>
                   <div className="absolute bottom-1 right-1 w-6 h-6 bg-green-500 border-4 border-white rounded-full"></div>
