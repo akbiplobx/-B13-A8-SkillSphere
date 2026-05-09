@@ -2,10 +2,11 @@
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { data: session } = authClient.useSession(); 
+  const { data: session } = authClient.useSession();
 
   const handleSignOut = async () => {
     await authClient.signOut();
@@ -27,7 +28,7 @@ const Navbar = () => {
           <li><Link href="/profile" className="hover:text-green-600 transition">My Profile</Link></li>
         </ul>
 
-        {/* Auth Condition (Desktop) */}
+        {/* Auth (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
           {session ? (
             <div className="flex items-center gap-3">
@@ -54,30 +55,63 @@ const Navbar = () => {
             </>
           )}
         </div>
+
+       
+        <button 
+          onClick={() => setIsOpen(!isOpen)} 
+          className="md:hidden text-gray-700 focus:outline-none p-2"
+        >
+          {isOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          )}
+        </button>
       </nav>
 
-      
-      {isOpen && (
-        <div className="md:hidden p-5 bg-white border-t">
-          {session ? (
-             <div className="flex flex-col gap-4">
-               <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-xl">
-                 <img src={session.user.image} className="w-12 h-12 rounded-full" alt="" />
-                 <div>
-                   <p className="font-bold">{session.user.name}</p>
-                   <p className="text-xs text-gray-500">{session.user.email}</p>
-                 </div>
-               </div>
-               <button onClick={handleSignOut} className="w-full py-3 text-red-500 font-bold border border-red-100 rounded-xl">Sign Out</button>
-             </div>
-          ) : (
-            <div className="flex flex-col gap-3">
-              <Link href="/signin" className="w-full text-center py-3 border rounded-xl">Sign In</Link>
-              <Link href="/signup" className="w-full text-center py-3 bg-green-600 text-white rounded-xl">Sign Up</Link>
+      {/* Mobile Menu Content with Animation */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden overflow-hidden bg-white border-t"
+          >
+            <div className="flex flex-col gap-4 p-5">
+              <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-700 font-medium py-2">Home</Link>
+              <Link href="/courses" onClick={() => setIsOpen(false)} className="text-gray-700 font-medium py-2">Courses</Link>
+              <Link href="/profile" onClick={() => setIsOpen(false)} className="text-gray-700 font-medium py-2">My Profile</Link>
+              
+              <div className="h-[1px] bg-gray-100 my-2"></div>
+
+              {session ? (
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-xl">
+                    <img src={session.user.image} className="w-12 h-12 rounded-full border border-green-500" alt="" />
+                    <div>
+                      <p className="font-bold text-gray-800">{session.user.name}</p>
+                      <p className="text-xs text-gray-500">{session.user.email}</p>
+                    </div>
+                  </div>
+                  <button onClick={handleSignOut} className="w-full py-3 text-red-500 font-bold border border-red-100 rounded-xl hover:bg-red-50 transition">
+                    Sign Out
+                  </button>
+                </div>
+              ) : (
+                <div className="flex flex-col gap-3">
+                  <Link href="/signin" onClick={() => setIsOpen(false)} className="w-full text-center py-3 border rounded-xl font-semibold">Sign In</Link>
+                  <Link href="/signup" onClick={() => setIsOpen(false)} className="w-full text-center py-3 bg-green-600 text-white rounded-xl font-semibold shadow-lg shadow-green-100">Sign Up</Link>
+                </div>
+              )}
             </div>
-          )}
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
