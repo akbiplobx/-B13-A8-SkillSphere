@@ -1,6 +1,6 @@
 import { createAuthClient } from "better-auth/react"
 export const authClient = createAuthClient({
    
-    baseURL: "https://skill-sphere-ak.vercel.app"
+    baseURL: "https://b13-a8-skill-sphere.vercel.app"
 })
 export const { signIn, signUp, signOut, useSession } = createAuthClient();
