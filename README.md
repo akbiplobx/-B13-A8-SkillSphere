@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+SkillSphere - Online Learning Platform
+SkillSphere is a modern learning platform designed to help you upgrade your skills. Whether you're looking for professional development or personal growth, SkillSphere connects you with high-quality courses to help you master the technologies of tomorrow.
 
-## Getting Started
+🔗 Live Link: ------------------
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 Key Features
+Dynamic Hero Section: A visually engaging landing area with smooth entrance animations to capture attention immediately.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Course Discovery: A dedicated section where you can search and filter through all available courses by title or category.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Interactive UI: Every course card features smooth scroll-reveal animations and hover effects for a premium feel.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Responsive Design: Fully optimized for all screen sizes, including mobile, tablets, and desktops.
 
-## Learn More
+Seamless Navigation: Easy-to-use interface built with a focus on user experience and fast loading.
 
-To learn more about Next.js, take a look at the following resources:
+Packages Used
+The following libraries and tools were used to build this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Next.js: The core framework for a fast and SEO-friendly experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Tailwind CSS: For clean, modern styling and a responsive layout.
 
-## Deploy on Vercel
+Framer Motion: Used for the smooth title fades and the scroll-based animations on the course cards.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Swiper JS: Powers the interactive sliders and carousels across the site.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+HeroUI (formerly NextUI): Provides professional components like the search input and loading spinners.
+
+React Icons / FontAwesome: For the crisp icons used throughout the interface.
+
+Thank you for checking out my project!
